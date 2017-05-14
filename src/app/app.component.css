@@ -1,0 +1,9 @@
+.required:after 
+{
+     content:" *"; 
+}
+.panel-body {
+background:#99ccff;}
+.panel{
+   padding: 0px;
+}
