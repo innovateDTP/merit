@@ -7,12 +7,14 @@ import {RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { CurrencyComponent }   from './currency/currency.component';
+import { DistanceComponent }   from './distance/distance.component';
 import {ConvertRoutes} from './app.routes'
 
 @NgModule({
   declarations: [
     AppComponent,
-    CurrencyComponent
+    CurrencyComponent,
+    DistanceComponent
   ],
   imports: [
     BrowserModule,
