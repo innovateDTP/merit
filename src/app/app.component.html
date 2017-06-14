@@ -1,13 +1,32 @@
 
-  <div >
-      <header >
-        <ul class="nav nav-pills">
-          <li class="active"><a  [routerLink]="['currency']">Currency</a></li>
-          <li><a   [routerLink]="['distance']">Distance</a></li>
-          <li><a   [routerLink]="['currency']">Finance</a></li>
-          <li><a   [routerLink]="['currency']">Commodity</a></li>
-        </ul>
-      </header>      
-      <!--<ng-component></ng-component>-->
-    </div>
+<header>
+<div id="title" >
+	<span id="leftHeader" ><img src="/assets/images/merit.png"/></span>
+	<span id="middleHeader">Mumbai, Education, Research, Innovation and Training (MERIT)</span>
+	<span id="rightHeader"><img src="/assets/images/tiss.png"/></span>
+  <h4>MERIT, A field action project of Tata Institute of Social Sciences (TISS) under Centre for Community Organisation and Development Practice</h4> 
+</div>
+  
+  
+  <div style="background-color: lightgreen;">
+    <ul class="nav nav-pills menu_simple">
+      <li><a  [routerLink]="['home']">Home</a></li>
+      <li><a   [routerLink]="['aboutus']">About Us</a></li>
+      <li><a   [routerLink]="['project']">Project</a></li>
+      <li><a   [routerLink]="['services']">Services</a></li>
+      <li><a   [routerLink]="['gallery']">Gallery</a></li>
+      <li><a   [routerLink]="['contribute']">Can you contribute?</a></li>
+      <li><a   [routerLink]="['partners']">Our Partners</a></li>
+    </ul>
+        
+  </div>      
+     
+    
+  </header>
+<main>
+   <!--<ng-component></ng-component>-->
     <router-outlet></router-outlet>
+<main>    
+  <br>
+
+  <footer>Contact US: <a href="mailto:mailtomerit@gmail.com"> mailtomerit@gmail.com</a></footer>
