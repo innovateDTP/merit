@@ -6,22 +6,24 @@ import {RouterModule} from '@angular/router';
 
 
 import { AppComponent } from './app.component';
-import { CurrencyComponent }   from './currency/currency.component';
-import { DistanceComponent }   from './distance/distance.component';
-import {ConvertRoutes} from './app.routes'
+import { HomeComponent }   from './components/home.component';
+import { AboutComponent }   from './components/about.component';
+import { PartnerComponent }   from './components/partners.component';
+import {AppRoutes} from './app.routes'
 
 @NgModule({
   declarations: [
     AppComponent,
-    CurrencyComponent,
-    DistanceComponent
+    HomeComponent,
+    AboutComponent,
+    PartnerComponent    
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     RouterModule,
-    RouterModule.forRoot(ConvertRoutes)
+    RouterModule.forRoot(AppRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
