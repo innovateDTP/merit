@@ -3,15 +3,18 @@
 // import { provideRouter, RouterConfig } from '@angular/router';
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CurrencyComponent } from './currency/currency.component';
-import { DistanceComponent } from './distance/distance.component';
+import { HomeComponent } from './components/home.component';
+import { AboutComponent } from './components/about.component';
+import { PartnerComponent } from './components/partners.component';
+
 
 
 // Route Configuration
-export const ConvertRoutes: Routes = [    
-  { path: '', component: CurrencyComponent},  
-  { path: 'currency', component: CurrencyComponent },  
-  { path: 'distance', component: DistanceComponent } 
+export const AppRoutes: Routes = [    
+  { path: '', component: HomeComponent},                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+  { path: 'home', component: HomeComponent },
+  { path: 'aboutus', component: AboutComponent }    ,
+  { path: 'partners', component: PartnerComponent }
 ];
 
 
